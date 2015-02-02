@@ -1,0 +1,14 @@
+{
+  "name": "sprktnk-srv",
+  "version": "0.0.1",
+  "devDependencies": {
+    "requirejs": "",
+    "jquery": "",
+    "requirejs-text": "",
+    "fastclick": "",
+    "almond": "~0.3.0",
+    "gsap": "",
+    "bootstrap-sass-official": ""
+  },
+  "private": true
+}

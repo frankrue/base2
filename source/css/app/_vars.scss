@@ -1,0 +1,26 @@
+// fonts
+@mixin font-header() {
+  font-family: "Axis";
+  font-weight: normal;
+}
+
+@mixin font-default() {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+@mixin font-bold() {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+@mixin font-thin() {
+  font-family: "HelveticaNeue-Thin", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+// colors
+$blue: #29B1E6;
+$green: #7BC142;
+$lightgray: #e0e0df;
+$mediumgray: #828384;

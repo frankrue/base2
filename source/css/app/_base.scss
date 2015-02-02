@@ -1,0 +1,32 @@
+body {
+  @include font-default();
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  font-size: 14px;
+  color: #666;
+}
+
+strong, b {
+  @include font-bold();
+}
+
+a {
+  color: $blue;
+}
+
+.confidential {
+  background: rgba(0,0,0,0.6);
+  color: red;
+  font-size: 7px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 0;
+  text-align: center;
+}
+
+button, input, a {
+  outline: 0 !important;
+}

@@ -1,0 +1,15 @@
+# node defaults
+node_modules
+npm-debug.log
+
+# max os x
+.DS_Store
+
+# dev environment
+/build/
+/source/js/lib/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

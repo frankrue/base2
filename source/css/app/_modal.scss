@@ -1,0 +1,82 @@
+.modal-login {
+  padding-top: 160px;
+  &.fade {
+    -webkit-transition: transform .5s;
+    -webkit-perspective: 500px;
+    .modal-dialog {
+      opacity: 0;
+      -webkit-transform: rotateX(-90deg);
+      -webkit-transition: opacity .5s, transform .5s;
+    }
+  }
+  &.in {
+    .modal-dialog {
+      -webkit-transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  .modal-backdrop {
+    visibility: hidden;
+  }
+  .modal-dialog {
+    width: 260px;
+    margin: 0 auto;
+    .modal-content {
+      box-shadow: none;
+      border: none;
+      background: rgba(255,255,255,0.1);
+      .modal-body {
+        @include clearfix();
+        > p {
+          color: white;
+          text-shadow: 0 1px 0 black;
+          font-size: 10px;
+          span {
+            display: inline-block;
+            border-radius: 50%;
+            background-color: $lightgray;
+            color: white;
+            width: 60px;
+            height: 60px;
+            font-size: 68px;
+            line-height: 76px;
+          }
+        }
+        .form-group {
+          label {
+            @include font-bold();
+            text-transform: uppercase;
+            font-size: 12px;
+            color: white;
+          }
+          input {
+            background: rgba(0,0,0,0.5);
+            box-shadow: none;
+            border: none;
+            color: $blue;
+            font-size: 12px;
+          }
+        }
+        .submit {
+          p {
+            line-height: 26px;
+            font-size: 11px;
+            color: $blue;
+            text-shadow: 0 1px 0 black;
+          }
+          .btn-login {
+            background: $green;
+            border-radius: 6px;
+            color: white;
+            text-shadow: none;
+            text-transform: uppercase;
+            border: none;
+            font-size: 11px;
+            padding: 5px 20px;
+            @include font-bold();
+          }
+        }
+      }
+    }
+  }
+}

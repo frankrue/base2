@@ -6,7 +6,6 @@ npm-debug.log
 .DS_Store
 
 # dev environment
-/build/
 /source/js/lib/
 
 # Elastic Beanstalk Files

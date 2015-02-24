@@ -15,7 +15,8 @@ require.config({
     text: '../lib/requirejs-text/text',
     jquery: '../lib/jquery/dist/jquery',
     almond: '../lib/almond/almond',
-    gsap: '../lib/gsap/src/uncompressed/TweenMax'
+    gsap: '../lib/gsap/src/uncompressed/TweenMax',
+    keen: '../lib/keen-js/dist/keen'
   }
 });
 

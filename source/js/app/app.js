@@ -4,7 +4,8 @@ require([
   'bootstrap-sass-official',
   'gsap',
   './utils/Preloader',
-  './utils/Modal'
+  './utils/Modal',
+  './utils/Tracking'
 ],
 function(
   $,
@@ -12,13 +13,15 @@ function(
   _bootstrap,
   _gsap,
   Preloader,
-  Modal
+  Modal,
+  Tracking
 ) {
 
   'use strict';
 
   var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
   var preloader;
+  var keen;
 
   // wait for DOM
   $(function() {
@@ -54,6 +57,9 @@ function(
 
     // eventually, stop the preloader (preferably when all external loads are done, but, for demo, after 1 second)
     setTimeout(stopPreloader, 1000);
+
+    // tracking
+    Tracking.send("global", { name: "app-init" } );
 
     // set up login modal
     // var modal = new Modal({

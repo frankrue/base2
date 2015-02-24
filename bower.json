@@ -8,7 +8,8 @@
     "fastclick": "",
     "almond": "~0.3.0",
     "gsap": "",
-    "bootstrap-sass-official": ""
+    "bootstrap-sass-official": "",
+    "keen-js": "~3.2.3"
   },
   "private": true
 }

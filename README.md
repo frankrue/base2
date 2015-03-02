@@ -4,6 +4,8 @@
 ## Contents
 - [Basic Setup](#setup)
 - [Basic Watching/Editing](#watch)
+- [Defaults](#defaults)
+- [tracking](#tracking)
 - [Building/Minifying for Distribution](#build)
 - [Deploying to Amazon Elastic Beanstalk](#deploy)
 
@@ -21,7 +23,7 @@ gulp
 ```
 
 ## <a name="defaults"></a>Defaults
-Make sure you add any global constants to the Defaults.js file, including (if you're using Keen tracking) the Keen `projectId`, `writeKey`, and `readKey`. 
+Make sure you add any global constants to the Defaults.js file, including (if you're using Keen tracking) the Keen `projectId`, `writeKey`, and `readKey`.
 
 ## <a name="tracking"></a>Tracking with [Keen.IO](http://keen.io)
 You can easily track anything at all by using API calls to Keen. This first requires that you [set up a new project](https://keen.io/add-project?organization_id=54ec9b7296773d6071c8e284) in your Keen Boco Digital dashboard.

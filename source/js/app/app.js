@@ -3,6 +3,8 @@ require([
   'fastclick',
   'bootstrap-sass-official',
   'gsap',
+  'iscroll-probe',
+  './utils/ScrollSpyIScroll',
   './utils/Preloader',
   './utils/Modal',
   './utils/Tracking'
@@ -12,6 +14,8 @@ function(
   FastClick,
   _bootstrap,
   _gsap,
+  _iscroll,
+  _ssi,
   Preloader,
   Modal,
   Tracking
@@ -22,6 +26,7 @@ function(
   var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
   var preloader;
   var keen;
+  var sectionScroll;
 
   // wait for DOM
   $(function() {
@@ -61,6 +66,13 @@ function(
     // tracking
     Tracking.send("global", { name: "app-init" } );
 
+    // iscroll
+    sectionScroll = new IScroll('.section-scroller',{
+      scrollbars: true,
+      probeType: 3
+    });
+
+
     // set up login modal
     // var modal = new Modal({
     //   type: "login"
@@ -75,11 +87,16 @@ function(
 
   function binds() {
 
+    $('.sections').scrollspy({
+      iscroll: sectionScroll
+    });
 
   }
 
   function stopPreloader() {
     preloader.active(false);
   }
+
+
 
 });

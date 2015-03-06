@@ -9,7 +9,8 @@
     "almond": "~0.3.0",
     "gsap": "",
     "bootstrap-sass-official": "",
-    "keen-js": "~3.2.3"
+    "keen-js": "~3.2.3",
+    "iscroll": "~5.1.3"
   },
   "private": true
 }

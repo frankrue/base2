@@ -16,7 +16,9 @@ require.config({
     jquery: '../lib/jquery/dist/jquery',
     almond: '../lib/almond/almond',
     gsap: '../lib/gsap/src/uncompressed/TweenMax',
-    keen: '../lib/keen-js/dist/keen'
+    keen: '../lib/keen-js/dist/keen',
+    iscroll: '../lib/iscroll/build/iscroll',
+    'iscroll-probe': '../lib/iscroll/build/iscroll-probe'
   }
 });
 

@@ -7129,7 +7129,7 @@ MIT License: https://github.com/driftyco/ionicons
 body {
   font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  padding: 0;
+  padding: 55px 0 0 0;
   margin: 0;
   background: #fff;
   font-size: 14px;
@@ -7155,6 +7155,13 @@ a {
 
 button, input, a {
   outline: 0 !important; }
+
+.section-scroller {
+  position: relative;
+  height: 300px;
+  overflow: hidden; }
+  .section-scroller section h1:first-child {
+    margin-top: 0; }
 
 .modal-login {
   padding-top: 160px; }

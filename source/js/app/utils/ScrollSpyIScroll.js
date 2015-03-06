@@ -107,8 +107,8 @@ define([
 
         }
 
-        if (scrollTop < 0) scrollTop = Math.abs(scrollTop);
-        else scrollTop = 0;
+        if (scrollTop < 0) scrollTop = Math.abs(scrollTop) + this.options.offset;
+        else scrollTop = 0 + this.options.offset;
 
       }
 
